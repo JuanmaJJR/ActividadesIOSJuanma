@@ -47,6 +47,8 @@ class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
             cell.imagn?.image=UIImage(named:"scala-logo.png")
         }
         return cell
+        
+        
     }
     
 
