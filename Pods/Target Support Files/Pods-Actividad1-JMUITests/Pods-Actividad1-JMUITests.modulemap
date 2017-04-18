@@ -1,0 +1,6 @@
+framework module Pods_Actividad1_JMUITests {
+  umbrella header "Pods-Actividad1-JMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
