@@ -62,6 +62,7 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-colored.png
                 }
                 else{
                     print("--->>>>",error!)
+                    
                 }
             
             
