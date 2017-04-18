@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField?
@@ -32,15 +34,21 @@ class ViewController: UIViewController {
             lblError?.text="Introduce un usuario y una contraseña"
         }
         
-        if (nameTextField?.text==DataHolder.sharedInstance.Usuario) && (passTextField?.text==DataHolder.sharedInstance.Pass){
-             self.performSegue(withIdentifier:"tran1", sender: self)
-        }
-        else{
-            lblError?.text = "Usuario o contraseña no existe"
-        }
+        FIRAuth.auth()?.signIn(withEmail: (nameTextField?.text)!, password: (passTextField?.text)!){(user, error) in
+
+            
+            if(error==nil){
+                self.performSegue(withIdentifier:"tran1", sender: self)
+                
+            }
+            else{
+                print("--->>>>",error!)
+                
+            }
     }
    
 
     
-    
+}
+
 }
