@@ -245,7 +245,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypf-rw-KXs" id="9TT-sg-Ugn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wiC-j6-SPc">
@@ -306,7 +306,7 @@
         <!--Item 3-->
         <scene sceneID="qbf-gs-Jql">
             <objects>
-                <viewController id="lmm-Bd-cyJ" sceneMemberID="viewController">
+                <viewController id="lmm-Bd-cyJ" customClass="VCMapa" customModule="Actividad1_JM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="big-RQ-37x"/>
                         <viewControllerLayoutGuide type="bottom" id="QIF-wh-Ex5"/>
@@ -324,6 +324,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 3" id="yiF-s8-Ejh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="miMapa" destination="s2q-Nq-3YZ" id="3vp-hv-C9Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URS-LA-yAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,18 +9,24 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
 
 class DataHolder: NSObject {
     static let sharedInstance:DataHolder=DataHolder()
-    
     var Usuario:String?
     var Pass:String?
     var firDataBaseRef: FIRDatabaseReference!
+    var firStorage:FIRStorage?
     var arUsuarios:Array<Usuario>?
+    var firStorageRef:FIRStorageReference?
     
-    
+    override init (){
+        
+    }
     func initFirebase(){
         FIRApp.configure()
         firDataBaseRef=FIRDatabase.database().reference()
+        firStorage = FIRStorage.storage()
+        firStorageRef = (firStorage?.reference())!
     }
 }

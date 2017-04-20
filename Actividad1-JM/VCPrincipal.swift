@@ -12,6 +12,7 @@ import FirebaseDatabase
 
 class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet var tbMiTable:UITableView?
+    @IBOutlet var imgvPrincipal:UIImageView?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,9 +21,9 @@ class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
             DataHolder.sharedInstance.firDataBaseRef.child("Usuarios").observe(FIRDataEventType.value, with: { (snapshot) in
                 var arTemp=snapshot.value as? Array<AnyObject>
                 
-                if(DataHolder.sharedInstance.arUsuarios==nil){
+                //if(DataHolder.sharedInstance.arUsuarios==nil){
                     DataHolder.sharedInstance.arUsuarios=Array<Usuario>()
-                }
+                //}
                 
                 for co in arTemp! as [AnyObject]{
                     
@@ -63,8 +64,10 @@ class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let usuarioi:Usuario = DataHolder.sharedInstance.arUsuarios![indexPath.row]
         
         cell.lblNombre?.text=usuarioi.sNombre
+        cell.descargarImagen(ruta: usuarioi.sRutaImagenP!)
         
         //cell.lblNombre?.text=""
+        /*
         if(indexPath.row==0){
             cell.lblNombre?.text="Swift"
             cell.imagn?.image=UIImage(named:"Image.png")
@@ -86,10 +89,13 @@ class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
             cell.imagn?.image=UIImage(named:"scala-logo.png")
         }
         return cell
-        
+ */
+        return cell
         
     }
-    
+}
+
+
 
     /*
     // MARK: - Navigation
@@ -101,4 +107,4 @@ class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     */
 
-}
+

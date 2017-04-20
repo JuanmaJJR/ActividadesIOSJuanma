@@ -9,6 +9,7 @@ target 'Actividad1-JM' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'Actividad1-JMTests' do
     inherit! :search_paths
