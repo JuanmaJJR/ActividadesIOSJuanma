@@ -25,6 +25,7 @@
 		EFB11A2F1E78078D007EA1FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB11A2D1E78078D007EA1FA /* LaunchScreen.storyboard */; };
 		EFB11A3A1E78078D007EA1FA /* Actividad1_JMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB11A391E78078D007EA1FA /* Actividad1_JMTests.swift */; };
 		EFB11A451E78078D007EA1FA /* Actividad1_JMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB11A441E78078D007EA1FA /* Actividad1_JMUITests.swift */; };
+		EFD31E631EA8A8B700924964 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD31E621EA8A8B700924964 /* Usuario.swift */; };
 		EFFF37281EA60D6A002728DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFFF37271EA60D6A002728DE /* GoogleService-Info.plist */; };
 		FE8C6066F7766B57336DAEE3 /* Pods_Actividad1_JMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48E807E900F401A5865DCE /* Pods_Actividad1_JMTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		EFB11A401E78078D007EA1FA /* Actividad1-JMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Actividad1-JMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB11A441E78078D007EA1FA /* Actividad1_JMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividad1_JMUITests.swift; sourceTree = "<group>"; };
 		EFB11A461E78078D007EA1FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFD31E621EA8A8B700924964 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = ../Usuario.swift; sourceTree = "<group>"; };
 		EFFF37271EA60D6A002728DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE8FA8BC74423FB71476A070 /* Pods_Actividad1_JM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Actividad1_JM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,6 +162,7 @@
 		EFB11A231E78078D007EA1FA /* Actividad1-JM */ = {
 			isa = PBXGroup;
 			children = (
+				EFD31E621EA8A8B700924964 /* Usuario.swift */,
 				EFAAD1351E8A6A9F003D2578 /* ios_logo.png */,
 				EF2BFA711E82C25A0046ACC2 /* 8723_f995_10.jpg */,
 				EFB11A241E78078D007EA1FA /* AppDelegate.swift */,
@@ -490,6 +493,7 @@
 				EFAAD12B1E8A440B003D2578 /* DataHolder.swift in Sources */,
 				EFB11A251E78078D007EA1FA /* AppDelegate.swift in Sources */,
 				EF2BFA741E82C6B50046ACC2 /* VCRegistroViewController.swift in Sources */,
+				EFD31E631EA8A8B700924964 /* Usuario.swift in Sources */,
 				EF2BFA781E82F11A0046ACC2 /* TVCMiCelda.swift in Sources */,
 				EFAAD12D1E8A55E1003D2578 /* VCColeccion.swift in Sources */,
 				EF2BFA761E82E9E10046ACC2 /* VCPrincipal.swift in Sources */,
